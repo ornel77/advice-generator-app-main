@@ -50,6 +50,10 @@ body {
   margin-bottom: 56px;
 }
 
+.advice-container .divider-desktop {
+  display: none;
+}
+
 .advice-container .generate-btn {
   position: absolute;
   left: 50%;
@@ -63,4 +67,23 @@ body {
 .advice-container .generate-btn-svg {
   width: 32px;
   height: auto;
+}
+/* -------------------------------------------------------------------------- */
+/*                                MEDIA QUERIES                               */
+/* -------------------------------------------------------------------------- */
+
+@media screen and (min-width: 768px) {
+  .advice-container {
+    min-width: 600px;
+  }
+
+  .advice-container .divider-desktop {
+    display: block;
+  margin-bottom: 56px;
+
+  }
+  .advice-container .divider-mobile {
+    display: none;
+
+  }
 }

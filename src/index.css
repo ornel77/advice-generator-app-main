@@ -26,6 +26,12 @@ button {
   background: transparent;
   border: 0;
   cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+    -moz-appearance: none;
+    user-select: none;
+    text-decoration: none;
+    
 }
 
 img {
