@@ -27,3 +27,8 @@ button {
   border: 0;
   cursor: pointer;
 }
+
+img {
+  display: block;
+  margin-inline: auto;
+}

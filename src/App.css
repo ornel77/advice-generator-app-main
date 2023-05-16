@@ -12,4 +12,55 @@
 body {
   background-color: var(--dark-blue);
   color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.advice-container {
+  position: relative;
+  max-width: 352px;
+  margin: 0 auto;
+  background-color: var(--dark-grayish-blue);
+  padding: 16px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.advice-container h3 {
+  color: hsla(150, 100%, 66%, 0.794);
+  text-transform: uppercase;
+  font-size: .85rem;
+  font-weight: light;
+  letter-spacing: 3.5px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.advice-container .advice {
+  color: var(--light-cyan);
+  font-weight: 800;
+  line-height: 1.5;
+  font-size: 1.75rem;
+  margin-bottom: 32px;
+}
+
+.advice-container .divider-mobile {
+  margin-bottom: 56px;
+}
+
+.advice-container .generate-btn {
+  position: absolute;
+  left: 50%;
+  bottom: -12%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  padding: 24px;
+  background-color: var(--neon-green);
+}
+
+.advice-container .generate-btn-svg {
+  width: 32px;
+  height: auto;
 }
