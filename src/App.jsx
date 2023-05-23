@@ -13,16 +13,21 @@ function App() {
       .catch(e => console.error(e)) 
   }, [])
 
+
   const hancleClick = async () => {
-    
-    fetch('https://api.adviceslip.com/advice')
+    await fetch('https://api.adviceslip.com/advice', {
+      method: 'GET',
+        headers: {
+          Accept: 'application/json',
+        },
+    })
       .then(response => response.json())
       .then(data => {
-        setAdviceObj(data.slip)
-        console.log("result is ",data.slip);
+          setAdviceObj(data.slip)
+          console.log("result is ",data.slip);
+        
       })
       .catch(e => console.error(e)) 
-  
     console.log(adviceObj);
   };
   
@@ -30,9 +35,9 @@ function App() {
   return (
     
     <div className='advice-container'>
-      <h3 className='advice-id'>advice #{adviceObj &&adviceObj?.id}</h3>
+      <h3 className='advice-id'>advice #{adviceObj.id}</h3>
       <p className='advice'>
-        &quot;{adviceObj?.advice}&quot;
+        &quot;{adviceObj.advice}&quot;
       </p>
       <img src={dividerMobile} alt='' className='divider-mobile' />
       <img src={dividerDesktop} alt="" className="divider-desktop" />
@@ -44,3 +49,5 @@ function App() {
 }
 
 export default App;
+
+

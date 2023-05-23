@@ -22,17 +22,22 @@ a {
 }
 
 button {
+  -webkit-tap-highlight-color: transparent;
   outline: none;
   background: transparent;
   border: 0;
   cursor: pointer;
   appearance: none;
   -webkit-appearance: none;
-    -moz-appearance: none;
-    user-select: none;
-    text-decoration: none;
+  -moz-appearance: none;
+  user-select: none;
+  text-decoration: none;
     
 }
+
+button:focus, button:active {
+  outline: none !important;
+} 
 
 img {
   display: block;

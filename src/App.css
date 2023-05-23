@@ -18,6 +18,9 @@ body {
   height: 100vh;
 }
 
+
+
+
 .advice-container {
   position: relative;
   max-width: 352px;
@@ -57,11 +60,18 @@ body {
 .advice-container .generate-btn {
   position: absolute;
   left: 50%;
-  bottom: -12%;
-  transform: translateX(-50%);
+  top: 100%;
+  transform: translate(-50%, -50%);
   border-radius: 50%;
   padding: 24px;
   background-color: var(--neon-green);
+  transition: 250ms
+}
+
+.advice-container .generate-btn:hover {
+  box-shadow: -3px 2px 43px 0px var(--neon-green);
+-webkit-box-shadow: -3px 2px 43px 0px var(--neon-green);
+-moz-box-shadow: -3px 2px 43px 0px var(--neon-green);
 }
 
 .advice-container .generate-btn-svg {
